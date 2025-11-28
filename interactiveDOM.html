@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive DOM</title>
+    <style>
+        #target-div {
+            width: 300px;
+            height: 100px;
+            border: 1px solid #ccc;
+            margin-top: 20px;
+            padding: 10px;
+            text-align: center;
+            line-height: 80px; /* Vertically center the text */
+            transition: background-color 0.5s;
+        }
+    </style>
+</head>
+<body>
+
+    <label for="color-input">Enter Color:</label>
+    <input type="text" id="color-input" placeholder="e.g., red, blue, #f00">
+    <br><br>
+
+    <label for="text-input">Enter Text:</label>
+    <input type="text" id="text-input" placeholder="New content for the div">
+    <br><br>
+
+    <button id="bg-button">Change Background</button>
+
+    <button id="text-button">Update Text</button>
+    <br>
+
+    <div id="target-div">
+        Initial content for the DIV.
+    </div>
+
+    <script src="interactiveDOM.js"></script>
+</body>
+</html>
